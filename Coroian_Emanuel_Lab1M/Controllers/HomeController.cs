@@ -8,6 +8,9 @@ namespace Coroian_Emanuel_Lab1M.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Message = "Mesaj din Controller";
+            ViewData["Time"] = DateTime.Now;
+
             return View();
         }
 
